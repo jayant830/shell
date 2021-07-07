@@ -13,12 +13,12 @@ if [ "$answer" == "a"];
 
 then
     echo "date"
-else if [ "$answer" == "b"];
+elif [ "$answer" == "b"];
 
 then
 
     echo "who"
-else if [ "$answer" == "c"];
+elif [ "$answer" == "c"];
 
 then
 
