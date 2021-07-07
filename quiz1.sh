@@ -26,7 +26,7 @@ then
 
 else [ "$ch" == "d"];  
 
-then
+
 
     echo "ls"
 
