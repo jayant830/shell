@@ -25,9 +25,6 @@ then
     echo "pwd"
 
 else [ "$ch" == "d"];  
-
-
-
     echo "ls"
 
 fi
