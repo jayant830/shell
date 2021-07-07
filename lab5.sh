@@ -20,7 +20,7 @@ echo 5. Quit
 
 #echo "Here is your output, ${choice[user_choice]}"
 
-select user_choice from List/Search, Add, Edit, Remove, Quit
+select user_choice in List/Search, Add, Edit, Remove, Quit
 
 do
 echo "Here is your output, ${user_choice}"
