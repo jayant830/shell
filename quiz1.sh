@@ -15,19 +15,19 @@ then
 
       echo "date"
 
-if [ "$answer" == "b"];
+elseif [ "$answer" == "b"];
 
 then
 
       echo "who"
 
-if [ "$answer" == "c"];
+elseif [ "$answer" == "c"];
 
 then
 
       echo "pwd"
 
-if [ "$ch" == "d"];
+else [ "$ch" == "d"];
 
 then
 
