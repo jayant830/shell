@@ -12,25 +12,22 @@ read -p "Enter a, b, c, or d: " answer
 if [ "$answer" == "a"];
 
 then
-
-      echo "date"
-
+    echo "date"
 elseif [ "$answer" == "b"];
 
 then
 
-      echo "who"
-
+    echo "who"
 elseif [ "$answer" == "c"];
 
 then
 
-      echo "pwd"
+    echo "pwd"
 
-else [ "$ch" == "d"];
+else [ "$ch" == "d"];  
 
 then
 
-      echo "ls"
+    echo "ls"
 
 fi
