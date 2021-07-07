@@ -8,15 +8,20 @@ echo 4. Remove
 echo 5. Quit
 
 
-echo Enter your selection:
-read user_choice
+#echo Enter your selection:
+#read user_choice
 
-choice[1]="List/Search"
-choice[2]="Add"
-choice[3]="Edit"
-choice[4]="Remove"
-choice[5]="Quit"
 
-echo "Here is your output, ${choice[user_choice]}"
+#choice[1]="List/Search"
+#choice[2]="Add"
+#choice[3]="Edit"
+#choice[4]="Remove"
+#choice[5]="Quit"
 
-echo "This is a change"
+#echo "Here is your output, ${choice[user_choice]}"
+
+select user_choice from List/Search, Add, Edit, Remove, Quit
+
+do
+echo "Here is your output, ${user_choice}"
+done
