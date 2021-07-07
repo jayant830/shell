@@ -9,22 +9,22 @@ echo -e " d. Contents of the working directory\n"
 
 read -p "Enter a, b, c, or d: " answer
 
-if [ $answer == "a"];
+if [ $answer == "a" ];
 
 then
     echo `date`
-elif [ $answer == "b"];
+elif [ $answer == "b" ];
 
 then
 
     echo `who`
-elif [ $answer == "c"];
+elif [ $answer == "c" ];
 
 then
 
     echo `pwd`
 
-else [ $answer == "d"];  
+else [ $answer == "d" ];  
     echo `ls`
 
 fi
