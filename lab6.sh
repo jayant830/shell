@@ -1,5 +1,5 @@
 #!bin/bash
-
+BOOK="myAddrBook"
 #let the user knnow that this is the address book
 echo --Address Book--
 
@@ -12,10 +12,11 @@ do
 echo "Here is your output, ${user_choice}"
 done
 
+function check_addrbook {
 
 if [ ! -f $BOOK ]; then
   echo "Creating $BOOK ..."
-  touch $BOOK
+  touch $BOOK 
 fi
 
 if [ ! -r $BOOK ]; then
@@ -27,5 +28,6 @@ if [ ! -w $BOOK ]; then
   echo "Error: $BOOK not writeable"
   exit 2
 fi
+}
+check_addrbook
 
-do_menu
