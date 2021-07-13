@@ -8,7 +8,7 @@ select user_choice in List/Search Add Edit Remove Quit
 
 #Ask the user to select between 5 different options to act on the address book.  a
 
-function check_addrbook() 
+check_addrbook() 
 {
     if [ ! -f $BOOK ]; then
     echo "Creating $BOOK ..."
