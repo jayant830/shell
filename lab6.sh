@@ -18,6 +18,7 @@ echo "If condition starts here"
 
 if [ ! -f $BOOK ]; then
 echo "Creating $BOOK..."
+touch $BOOK
 fi
 
 #if [ ! -f $BOOK ]; then
