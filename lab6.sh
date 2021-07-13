@@ -10,11 +10,11 @@ select user_choice in List/Search Add Edit Remove Quit
 #Ask the user to select between 5 different options to act on the address book.  a
 
 #check_addrbook ()
-echo "If condition starts here" 
+#echo "If condition starts here" 
 
-if [ ! -f $BOOK ]; then
-echo "Creating $BOOK..."
-fi
+#if [ ! -f $BOOK ]; then
+#echo "Creating $BOOK..."
+#fi
 
 #if [ ! -f $BOOK ]; then
 #echo "Creating $BOOK ..."
@@ -30,7 +30,7 @@ fi
 ## } 
 
 # check_addrbook
-do
-echo "Here is your output, ${user_choice}"
-done
+#do
+#echo "Here is your output, ${user_choice}"
+#done
 
