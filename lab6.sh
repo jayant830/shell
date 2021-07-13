@@ -4,12 +4,14 @@ BOOK="myAddrBook"
 echo "--Address Book--"
 
 #select is used to create a menu efficiently and allows the user to choose an option that is presented before them. 
+echo "Asking the user to select an option"
 select user_choice in List/Search Add Edit Remove Quit
 
 #Ask the user to select between 5 different options to act on the address book.  a
 
-#check_addrbook () 
-##{ 
+#check_addrbook ()
+echo "If condition starts here" 
+
 if [ ! -f $BOOK ]; then
 echo "Creating $BOOK..."
 fi
