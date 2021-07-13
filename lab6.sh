@@ -9,6 +9,7 @@ select user_choice in List/Search Add Edit Remove Quit
 
 do
 echo "Here is your output, ${user_choice}"
+exit 0
 done
 
 #Ask the user to select between 5 different options to act on the address book.  a
