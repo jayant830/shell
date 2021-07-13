@@ -11,16 +11,20 @@ select user_choice in List/Search Add Edit Remove Quit
 #check_addrbook () 
 ##{ 
 if [ ! -f $BOOK ]; then
-echo "Creating $BOOK ..."
-touch $BOOK 
-elif
-[ ! -r $BOOK ]; then
-echo "Error: $BOOK not readable"
-exit 1
-elif [ ! -w $BOOK ]; then
-echo "Error: $BOOK not writeable"
-exit 2
+echo "Creating $BOOK..."
 fi
+
+#if [ ! -f $BOOK ]; then
+#echo "Creating $BOOK ..."
+#touch $BOOK 
+#elif
+#[ ! -r $BOOK ]; then
+#echo "Error: $BOOK not readable"
+#exit 1
+#elif [ ! -w $BOOK ]; then
+#echo "Error: $BOOK not writeable"
+#exit 2
+#fi
 ## } 
 
 # check_addrbook
