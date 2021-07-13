@@ -7,6 +7,4 @@ echo "--Address Book--"
 echo "Asking the user to select an option"
 select user_choice in List/Search Add Edit Remove Quit
 
-#Ask the user to select between 5 different options to act on the address book.  a
-
 echo "If condition starts here"
