@@ -8,8 +8,8 @@ echo "Asking the user to select an option"
 select user_choice in List/Search Add Edit Remove Quit
 #select user_choice in List/Search Add Edit Remove Quit
 
-echo "If condition starts here"
-
 do
 echo "${user_choice}"
 done
+
+echo "If condition starts here"
