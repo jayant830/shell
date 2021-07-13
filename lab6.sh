@@ -13,14 +13,11 @@ select user_choice in List/Search Add Edit Remove Quit
     if [ ! -f $BOOK ]; then
     echo "Creating $BOOK ..."
     touch $BOOK 
-    fi
-    
-    if [ ! -r $BOOK ]; then
+    elif
+    [ ! -r $BOOK ]; then
     echo "Error: $BOOK not readable"
     exit 1
-    fi
-    
-    if [ ! -w $BOOK ]; then
+    elif [ ! -w $BOOK ]; then
     echo "Error: $BOOK not writeable"
     exit 2
     fi
