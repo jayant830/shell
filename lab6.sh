@@ -14,7 +14,6 @@ echo "Here is your output, ${user_choice}"
 #Ask the user to select between 5 different options to act on the address book.  a
 
 #check_addrbook ()
-echo "If condition starts here" 
 
 if [ ! -f $BOOK ]; then
 echo "Creating $BOOK..."
