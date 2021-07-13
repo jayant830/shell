@@ -9,3 +9,7 @@ select user_choice in List/Search Add Edit Remove Quit
 #select user_choice in List/Search Add Edit Remove Quit
 
 echo "If condition starts here"
+
+do
+echo "${user_choice}"
+done
