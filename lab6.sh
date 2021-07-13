@@ -8,8 +8,8 @@ select user_choice in List/Search Add Edit Remove Quit
 
 #Ask the user to select between 5 different options to act on the address book.  a
 
-check_addrbook () 
-{ 
+#check_addrbook () 
+##{ 
     if [ ! -f $BOOK ]; then
     echo "Creating $BOOK ..."
     touch $BOOK 
@@ -24,9 +24,9 @@ check_addrbook ()
     echo "Error: $BOOK not writeable"
     exit 2
     fi
-} 
+## } 
 
-check_addrbook
+# check_addrbook
 do
 echo "Here is your output, ${user_choice}"
 done
