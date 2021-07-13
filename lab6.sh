@@ -12,7 +12,7 @@ do
 echo "Here is your output, ${user_choice}"
 done
 
-function check_addrbook {
+function check_addrbook () {
 
 if [ ! -f $BOOK ]; then
   echo "Creating $BOOK ..."
