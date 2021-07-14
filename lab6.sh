@@ -34,12 +34,17 @@ add_item () {
 #select is used to create a menu efficiently and allows the user to choose an option that is presented before them. 
 echo "Asking the user to select an option"
 select user_choice in List/Search Add Edit Remove Quit
-echo "Please select an option"
 
 do
+echo "Please select an option"
 echo "Here is your output, ${user_choice}"
+
+if [ ${user_choice} == "Add" ]; then
+main
 
 #Ask the user to select between 5 different options to act on the address book.  a
 
-check_addrbook
 done
+main () {
+    check_addrbook
+}
