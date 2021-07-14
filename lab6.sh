@@ -24,11 +24,11 @@ fi
 }
 
 add_item () {
-    echo "First Name: " | tee myAddrBook
-    read $fName | tee myAddrBook
+    echo "First Name: " | `tee myAddrBook`
+    read $fName | `tee myAddrBook`
 
-    echo "Last Name: " | tee myAddrBook
-    read $lName | tee myAddrBook
+    echo "Last Name: " | `tee myAddrBook`
+    read $lName | `tee myAddrBook`
 }
 
 main () {
