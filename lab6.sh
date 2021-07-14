@@ -26,11 +26,24 @@ fi
 add_item () {
     echo "First Name: "  
     read fName 
-    echo $fName | `tee -a myAddrBook` 2> /dev/null
-
     echo "Last Name: " 
     read lName
-    echo ":$lName" | `tee -a  myAddrBook` 2> /dev/null
+    echo "Address: "
+    read addr
+    echo "City: "
+    read city
+    echo "State: "
+    read state
+    echo "Zip: "
+    read zip
+    echo "Phone Number (xxx-xxx-xxxx): "
+    read phnum
+    echo "Email Address: "
+    read emadd
+    echo "Preferred Method of Contact: "
+    read pmc
+
+    echo "$fName:$lName:$addr:$city:$state:$zip:$phnum:$emadd:$pmc" | `tee -a  myAddrBook` 2> /dev/null
 }
 
 main () {
