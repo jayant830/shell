@@ -57,10 +57,12 @@ echo "Please select an option"
 select user_choice in List/Search Add Edit Remove Quit
 
 do
-echo "Here is your output, ${user_choice}"
+#echo "Here is your output, ${user_choice}"
 
 if [ ${user_choice} == "Add" ]; then
 main
+elif [ ${user_choice} == "Quit" ]; then
+exit 0
 fi
 
 #Ask the user to select between 5 different options to act on the address book.  a
