@@ -24,10 +24,10 @@ fi
 }
 
 add_item () {
-    echo "First Name: " | `tee -a myAddrBook`
+    echo "First Name: "  
     read $fName | `tee -a myAddrBook`
 
-    echo "Last Name: " | `tee -a myAddrBook`
+    echo "Last Name: " 
     read $lName | `tee -a  myAddrBook`
 }
 
