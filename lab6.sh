@@ -25,10 +25,12 @@ fi
 
 add_item () {
     echo "First Name: "  
-    read $fName | `tee -a myAddrBook`
+    read fName 
+    echo $fName | `tee -a myAddrBook` 2> /dev/null
 
     echo "Last Name: " 
-    read $lName | `tee -a  myAddrBook`
+    read lName
+    echo ":$lName" | `tee -a  myAddrBook` 2> /dev/null
 }
 
 main () {
