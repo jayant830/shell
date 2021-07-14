@@ -24,24 +24,24 @@ fi
 }
 
 add_item () {
-    echo "First Name: "
-    read $fName
+    echo "First Name: " | tee myAddrBook
+    read $fName | tee myAddrBook
 
-    echo "Last Name: "
-    read $lName
+    echo "Last Name: " | tee myAddrBook
+    read $lName | tee myAddrBook
 }
 
 main () {
     echo "I am going to create an address book to add contacts"
     check_addrbook
+    add_item
 }
 
 #select is used to create a menu efficiently and allows the user to choose an option that is presented before them. 
-echo "Asking the user to select an option"
+echo "Please select an option"
 select user_choice in List/Search Add Edit Remove Quit
 
 do
-echo "Please select an option"
 echo "Here is your output, ${user_choice}"
 
 if [ ${user_choice} == "Add" ]; then
