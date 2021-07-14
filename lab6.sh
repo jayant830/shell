@@ -45,8 +45,8 @@ echo "Here is your output, ${user_choice}"
 
 if [ ${user_choice} == "Add" ]; then
 main
+fi
 
 #Ask the user to select between 5 different options to act on the address book.  a
 
 done
-
