@@ -32,6 +32,7 @@ add_item () {
 }
 
 main () {
+    echo "I am going to create an address book to add contacts"
     check_addrbook
 }
 
