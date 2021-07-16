@@ -51,9 +51,23 @@ list () {
 }
 
 search () {
-    echo "Who do you want to search for? \n"
-    read search_string 
-    cat myAddrBook |grep $search_string
+    echo "Who do you want to search for?"
+    read search_string
+    if [ "$?" == 0 ]; then
+    grep -i $search_string $BOOK
+    else 
+    echo "Does not exist"
+    echo "Do you want to add a new entry [y/n]?"
+    read u_input
+    if [ u_input == "y" ]; then 
+    add_item
+    elif [ u_input == "n" ]; then
+    exit 0
+    else 
+    echo "invalid input"
+    exit 1
+    fi 
+    fi
 }
 
 main () {
