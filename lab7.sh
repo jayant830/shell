@@ -58,9 +58,9 @@ search () {
     echo "Does not exist"
     echo "Do you want to add a new entry [y/n]?"
     read u_input
-    if [ u_input == "y" ]; then 
+    if [ $u_input == "y" ]; then 
     add_item
-    elif [ u_input == "n" ]; then
+    elif [ $u_input == "n" ]; then
     exit 0
     else 
     echo "invalid input"
