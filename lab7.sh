@@ -53,7 +53,7 @@ list () {
 search () {
     echo "Who do you want to search for?"
     read search_string
-    if [ "$?" == 0 ]; then
+    if [ "$?" == "0" ]; then
     grep -i $search_string $BOOK
     else 
     echo "Does not exist"
