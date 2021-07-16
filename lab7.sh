@@ -53,9 +53,8 @@ list () {
 search () {
     echo "Who do you want to search for?"
     read search_string
-    if [ "$?" == "0" ]; then
     grep -i $search_string $BOOK
-    else 
+    if [ "$?" != "0" ]; then
     echo "Does not exist"
     echo "Do you want to add a new entry [y/n]?"
     read u_input
@@ -67,6 +66,8 @@ search () {
     echo "invalid input"
     exit 1
     fi 
+    else
+    continue
     fi
 }
 
