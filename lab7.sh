@@ -24,7 +24,7 @@ no_addrbook () {
     echo "Address Book $BOOK does not exist. ..."
     echo "Please create one now."
     fi
-
+    exit 0
 }
 
 add_item () {
