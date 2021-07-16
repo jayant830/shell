@@ -73,12 +73,17 @@ search () {
     fi
 }
 
-main () {
+add () {
     echo "I am going to create an address book to add contacts"
     check_addrbook
     add_item
 }
 
+del_item () {
+    echo "Enter the first name of the contact you want to delete: "
+    read u_input 
+    grep -i "$u_input" $BOOK |sed -i "1d" $BOOK
+}
 #select is used to create a menu efficiently and allows the user to choose an option that is presented before them. 
 echo "Please select an option"
 select user_choice in List Search Add Edit Remove Quit
@@ -87,7 +92,7 @@ do
 #echo "Here is your output, ${user_choice}"
 
 if [ ${user_choice} == "Add" ]; then
-main
+add
 elif [ ${user_choice} == "List" ]; then
 list
 elif [ ${user_choice} == "Search" ]; then
