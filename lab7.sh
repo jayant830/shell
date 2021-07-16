@@ -46,6 +46,14 @@ add_item () {
     echo "$fName:$lName:$addr:$city:$state:$zip:$phnum:$emadd:$pmc" | `tee -a  myAddrBook` 2> /dev/null
 }
 
+list () {
+    cat myAddrBook
+}
+
+search () {
+    echo "placeholder"
+}
+
 main () {
     echo "I am going to create an address book to add contacts"
     check_addrbook
@@ -61,6 +69,10 @@ do
 
 if [ ${user_choice} == "Add" ]; then
 main
+elif [ ${user_choice} == "List" ]; then
+list
+elif [ ${user_choice} == "Search" ]; then
+search
 elif [ ${user_choice} == "Quit" ]; then
 exit 0
 fi
