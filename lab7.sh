@@ -19,13 +19,6 @@ exit 2
 fi
 }
 
-no_addrbook () {
-    if [ ! -f $BOOK ]; then
-    echo "Address Book $BOOK does not exist. ..."
-    echo "Please create one now."
-    fi
-    exit 0
-}
 
 add_item () {
     echo "First Name: "  
@@ -51,8 +44,13 @@ add_item () {
 }
 
 list () {
-    no_addrbook
+    if [ ! -f $BOOK ]; then
+    echo "Address Book $BOOK does not exist. ..."
+    echo "Please create one now."
+    continue 
+    else 
     cat myAddrBook
+    fi
 }
 
 search () {
