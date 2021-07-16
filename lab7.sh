@@ -51,7 +51,9 @@ list () {
 }
 
 search () {
-    echo "placeholder"
+    echo "Who do you want to search for? \n"
+    read search_string 
+    cat myAddrBook |grep $search_string
 }
 
 main () {
