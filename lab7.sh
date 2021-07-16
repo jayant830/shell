@@ -46,8 +46,7 @@ add_item () {
 list () {
     if [ ! -f $BOOK ]; then
     echo "Address Book $BOOK does not exist. ..."
-    echo "Please create one now."
-    continue 
+    echo "Please create one now." 
     else 
     cat myAddrBook
     fi
