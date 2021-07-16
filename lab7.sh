@@ -5,10 +5,6 @@ echo "--Address Book--"
 
 check_addrbook () {
 
-if [ ! -f $BOOK ]; then
-echo "Creating $BOOK..."
-touch $BOOK
-fi
 
 if [ ! -f $BOOK ]; then
 echo "Creating $BOOK ..."
@@ -21,6 +17,14 @@ elif [ ! -w $BOOK ]; then
 echo "Error: $BOOK not writeable"
 exit 2
 fi
+}
+
+no_addrbook () {
+    if [ ! -f $BOOK ]; then
+    echo "Address Book $BOOK does not exist. ..."
+    echo "Please create one now."
+    fi
+
 }
 
 add_item () {
@@ -47,6 +51,7 @@ add_item () {
 }
 
 list () {
+    no_addrbook
     cat myAddrBook
 }
 
