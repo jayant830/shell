@@ -68,8 +68,6 @@ search () {
     echo "invalid input"
     exit 1
     fi 
-    else
-    continue
     fi
 }
 
@@ -88,7 +86,6 @@ del_item () {
     echo "Deleted $u_input from your Address book"
     else
     echo "Contact $u_input does not exist. Cannot delete"
-    continue
     fi
 }
 #select is used to create a menu efficiently and allows the user to choose an option that is presented before them. 
