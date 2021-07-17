@@ -82,7 +82,7 @@ add () {
 del_item () {
     echo "Enter the first name of the contact you want to delete: "
     read u_input 
-    grep -i "$u_input" $BOOK |sed -i "1d" $BOOK
+    sed -i "/^$u_input/d" $BOOK
 }
 #select is used to create a menu efficiently and allows the user to choose an option that is presented before them. 
 echo "Please select an option"
