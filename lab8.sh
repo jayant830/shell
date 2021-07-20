@@ -97,9 +97,8 @@ do_edit () {
     echo "What do you want to change it to?"
     read edit_input
     echo $edit_input
-    sed -i 's/$user_input/$edit_input/g' $BOOK
+    sed -i 's/$user_input/$edit_input/' $BOOK
     cat $BOOK | grep $edit_input
-
 }
 
 main () {
