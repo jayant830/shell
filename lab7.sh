@@ -88,6 +88,7 @@ del_item () {
     echo "Contact $u_input does not exist. Cannot delete"
     fi
 }
+
 #select is used to create a menu efficiently and allows the user to choose an option that is presented before them. 
 echo "Please select an option"
 select user_choice in List Search Add Edit Remove Quit
@@ -104,6 +105,7 @@ search
 elif [ ${user_choice} == "Remove" ]; then
 del_item
 elif [ ${user_choice} == "Quit" ]; then
+
 exit 0
 fi
 

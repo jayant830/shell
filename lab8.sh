@@ -116,6 +116,8 @@ elif [ ${user_choice} == "Search" ]; then
 search
 elif [ ${user_choice} == "Remove" ]; then
 del_item
+elif [ ${user_choice} == "Edit" ]; then
+do_edit
 elif [ ${user_choice} == "Quit" ]; then
 exit 0
 fi
