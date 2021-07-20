@@ -95,10 +95,8 @@ do_edit () {
     read user_input
     echo "What do you want to change it to?"
     read edit_input
-#    echo "I want to run SED"
     sed -i "s/$user_input/$edit_input/" $BOOK
-    #sed -i 's/$user_input/$edit_input/' $BOOK
- #   echo "I ran this command"
+    echo "The entry with $user_input was changed"
     cat $BOOK | grep $edit_input
 }
 
