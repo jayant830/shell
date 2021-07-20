@@ -92,10 +92,12 @@ del_item () {
 do_edit () {
 
     echo "Which entry do you want to edit?"
-    read user_input 
+    read user_input
+    echo $user_input 
     echo "What do you want to change it to?"
     read edit_input
-    echo `sed -i 's/$user_input/$edit_input/g' $BOOK`
+    echo $edit_input
+    sed -i 's/$user_input/$edit_input/g' $BOOK
     cat $BOOK | grep $edit_input
 
 }
