@@ -1,7 +1,8 @@
 #!bin/bash
 while :
 do
-    Time='date+%r'
-    echo -n Timesleep 15
-    clear 
+    Time=date+%r
+    echo -n $Time 
+    sleep 15
+    clear
 done
