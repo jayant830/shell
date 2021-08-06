@@ -19,7 +19,7 @@ mkdir $pathname
 fi
 cd $wd
 }
-
+makepath2
 
 
 
