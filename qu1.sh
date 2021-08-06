@@ -14,7 +14,7 @@ j=`expr $j + 1`
 echo $j
 done
 }
-
+doindent
 #traverse()
 ##{
 # Traverse a directory
