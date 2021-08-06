@@ -20,7 +20,7 @@ traverse()
 indent="$2"
 
 echo $1
-ls "$1" | for (( i=0; i -lt "$1"; i++ ))
+ls "$1" | while read i
 do
 doindent $2
 if [ -d "$1/$i" ]; then
