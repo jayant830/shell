@@ -10,6 +10,7 @@ j=0;
 for j in {0...$1}; do
 echo -en " "
 j=`expr $j + 1`
+echo $j
 done
 }
 
