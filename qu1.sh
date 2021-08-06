@@ -7,7 +7,7 @@ doindent()
 # echo " \c" instead of
 # echo -en " "
 j=0;
-for j in {0...$1} do
+for j in {0...$1}; do
 echo -en " "
 j=`expr $j + 1`
 done
@@ -18,7 +18,7 @@ traverse()
 # Traverse a directory
 indent="$2"
 
-ls "$1" | for i in {0...$1}
+ls "$1" | for i in {0...$1};
 do
 doindent $2
 if [ -d "$1/$i" ]; then
