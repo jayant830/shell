@@ -4,6 +4,7 @@ function makepath2()
 {
 wd=$(pwd)
 pathname=$1
+echo $pathname
 while [[ $pathname = */* && ${#pathname} > 0 ]]
 do
 if [[ ! -d "${pathname%%/*}" ]]
@@ -20,8 +21,3 @@ fi
 cd $wd
 }
 makepath2
-
-
-
-
-
