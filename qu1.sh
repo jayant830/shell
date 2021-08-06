@@ -19,6 +19,7 @@ traverse()
 # Traverse a directory
 indent="$2"
 
+echo $1
 ls "$1" | for (( i=0; i -lt "$1"; i++ ))
 do
 doindent $2
