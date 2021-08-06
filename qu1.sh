@@ -7,7 +7,7 @@ doindent()
 # echo " \c" instead of
 # echo -en " "
 # j=0;
-for (( j=0; j -lt "$1"; j++ ))
+for (( j=-1; j -lt "$1"; j++ ))
 do
 echo -en " "
 j=`expr $j + 1`
