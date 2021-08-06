@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/bin/ba
+sh
 
 doindent()
 {
